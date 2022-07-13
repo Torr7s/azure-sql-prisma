@@ -2,7 +2,18 @@
   "name": "api",
   "version": "1.0.0",
   "description": "The back-end side",
+  "author": {
+    "email": "torr7s.contact@gmail.com",
+    "name": "Matheus Torres"
+  },
   "scripts": {
-    "start": "func start"
+    "start:dev": "func start"
+  },
+  "devDependencies": {
+    "@azure/functions": "^3.2.0",
+    "prisma": "3.15.2"
+  },
+  "dependencies": {
+    "@prisma/client": "3.15.2"
   }
 }
