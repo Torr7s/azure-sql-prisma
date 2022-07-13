@@ -3,7 +3,7 @@ const errorHandler = require('../shared/errors');
 
 module.exports = async function (context, req) {
   try {
-    const {
+    let {
       name,
       salary,
       job_role,
@@ -35,7 +35,7 @@ module.exports = async function (context, req) {
     }
   } catch (error) {
     context.log('Error while trying to create an employee.');
-    context.error(error);
+    context.log(error);
 
     return errorHandler(500, error);
   }
