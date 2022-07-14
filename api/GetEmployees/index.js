@@ -19,6 +19,6 @@ module.exports = async function (context, req) {
     context.log('Error while trying to list all employees.');
     context.log(error);
 
-    return handleError(500, error);
+    return errorHandler(500, error);
   }
 }
