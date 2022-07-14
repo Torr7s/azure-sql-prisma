@@ -11,8 +11,6 @@ module.exports = async function (context, req) {
       ],
     });
 
-    console.log(employees)
-
     return {
       status: 200,
       body: employees,
